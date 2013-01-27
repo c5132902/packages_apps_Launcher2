@@ -33,6 +33,7 @@ public class Preferences extends PreferenceActivity implements
     private static final String TAG = "Launcher.Preferences";
 
     private static final String SEARCHBAR_PREF = "ui_homescreen_general_search";
+    private static final String AUTOROTATE_PREF = "ui_general_orientation";
     
     private SharedPreferences mPrefs;
 
@@ -54,6 +55,9 @@ public class Preferences extends PreferenceActivity implements
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen
             , Preference preference) {
         if (preference.getKey().equals(SEARCHBAR_PREF)) {
+            setForReset();
+        }
+	if (preference.getKey().equals(AUTOROTATE_PREF)) {
             setForReset();
         }
         return false;
