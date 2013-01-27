@@ -29,6 +29,7 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityOptions;
 import android.app.SearchManager;
+import android.app.UiModeManager;
 import android.appwidget.AppWidgetHostView;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProviderInfo;
@@ -431,13 +432,13 @@ public final class Launcher extends Activity
 
         updateGlobalIcons();
 
-        // On large interfaces, we want the screen to auto-rotate based on the current orientation
-        unlockScreenOrientation(true);
-    }
-
-    protected void onUserLeaveHint() {
-        super.onUserLeaveHint();
-        sPausedFromUserAction = true;
+        final UiModeManager uiModeManager = (UiModeManager) getSystemService(Context.UI_MODE_SERVICE);
+        if (PreferencesProvider.Interface.General.getAutoRotate(this) ||
+                uiModeManager.getCurrentModeType() != Configuration.UI_MODE_TYPE_NORMAL) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
+        }
     }
 
     private void updateGlobalIcons() {
@@ -3923,4 +3924,5 @@ interface LauncherTransitionable {
     void onLauncherTransitionStep(Launcher l, float t);
     void onLauncherTransitionEnd(Launcher l, boolean animated, boolean toWorkspace);
 }
+
 

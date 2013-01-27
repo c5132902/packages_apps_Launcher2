@@ -55,8 +55,9 @@
     </PreferenceCategory>
 
     <!-- General -->
-    <!--
-    <PreferenceCategory android:title="@string/preferences_general_title">
-    </PreferenceCategory>
-    -->
+        <PreferenceScreen android:key="ui_general"
+            android:title="@string/preferences_interface_general_title">
+            <CheckBoxPreference android:key="ui_general_orientation"
+                android:title="@string/preferences_interface_general_orientation_title" />
+        </PreferenceScreen>
 </PreferenceScreen>
