@@ -34,6 +34,7 @@ public class Preferences extends PreferenceActivity implements
 
     private static final String SEARCHBAR_PREF = "ui_homescreen_general_search";
     private static final String AUTOROTATE_PREF = "ui_general_orientation";
+    private static final String HOMESCREEN_PREF = "ui_homescreen_screens";
     
     private SharedPreferences mPrefs;
 
@@ -58,6 +59,9 @@ public class Preferences extends PreferenceActivity implements
             setForReset();
         }
 	if (preference.getKey().equals(AUTOROTATE_PREF)) {
+            setForReset();
+        }	
+	if (preference.getKey().equals(HOMESCREEN_PREF)) {
             setForReset();
         }
         return false;
