@@ -43,7 +43,7 @@
             launcher:cellCountY="@integer/cell_count_y"
             launcher:pageSpacing="@dimen/workspace_page_spacing"
             launcher:scrollIndicatorPaddingLeft="@dimen/qsb_bar_height"
-            launcher:scrollIndicatorPaddingRight="@dimen/button_bar_height">
+	    launcher:scrollIndicatorPaddingRight="@dimen/button_bar_height"/>
 
         <include
             android:id="@+id/qsb_divider"
