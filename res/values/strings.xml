@@ -25,13 +25,13 @@
     <!-- Accessibility-facing application name -->
     <string name="home">Home</string>
     <!-- Name for all applications running as this uid. -->
-    <string name="uid_name">Android Core Apps</string>
+    <string name="uid_name">Basic Android apps</string>
     <!-- Default folder name -->
     <string name="folder_name"></string>
     <!-- Title of dialog that appears after user selects Wallpaper from menu -->
     <string name="chooser_wallpaper">Choose wallpaper from</string>
     <!-- Button label on Wallpaper Gallery screen; user selects this button to set a specific wallpaper -->
-    <string name="wallpaper_instructions">Set wallpaper</string>
+    <string name="wallpaper_instructions">Set the wallpaper</string>
     <!-- Option in "Select wallpaper from" dialog box -->
     <string name="pick_wallpaper">Wallpapers</string>
     <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
@@ -64,7 +64,7 @@
     <!-- Label of Folder name field in Rename folder dialog box -->
     <string name="rename_folder_label">Folder name</string>
     <!-- Title of dialog box -->
-    <string name="rename_folder_title">Rename folder</string>
+    <string name="rename_folder_title">Rename this folder</string>
     <!-- Buttons in Rename folder dialog box -->
     <string name="rename_action">OK</string>
     <!-- Buttons in Rename folder dialog box -->
@@ -73,7 +73,7 @@
     <!-- Shortcuts -->
     <skip />
     <!-- Title of dialog box -->
-    <string name="menu_item_add_item">Add to Home screen</string>
+    <string name="menu_item_add_item">Add to your Home screen</string>
     <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all apps -->
     <string name="group_applications">Apps</string>
     <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all shortcut
@@ -141,7 +141,7 @@ s -->
     <string name="menu_add">Add</string>
     <!-- Menu item used to manage installed applications -->
     <string name="menu_manage_apps">Manage apps</string>
-    <!-- Noun, menu item used to set the desktop's wallpaper -->
+    <!-- Noun, menu item used to set the desktops wallpaper -->
     <string name="menu_wallpaper">Wallpaper</string>
     <!-- Verb, menu item used to initiate global search -->
     <string name="menu_search">Search</string>
@@ -161,7 +161,7 @@ s -->
     <skip />
     <!-- Describes the button for uninstalling the currently selected application.
          Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none] -->
-    <string name="cab_menu_delete_app">Uninstall app</string>
+    <string name="cab_menu_delete_app">Uninstall the app</string>
     <!-- Describes the button for getting details/info about currently selected application.
          Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none] -->
     <string name="cab_menu_app_info">App details</string>
